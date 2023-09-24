@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+/* COLOR */
+--STOPWATCH-COLOR: #000000;
+--TIME-COLOR: #334546;
+--FONT-COLOR: #ffffff;
+--ADD-MARK-COLOR: #000;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    margin-top: 25px;
+    height: 200px;
+    width: 90%;
+    background: var(--STOPWATCH-COLOR);
+    border-radius: 15px;
+}
+
+.time-container, .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.time-container {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--TIME-COLOR);
+    width: 90%;
+    color: var(--FONT-COLOR);
+    border-radius: 10px;
+    font-size: 5.6rem;
+}
+
+.button-container {
+    margin: 10px 0px 10px 0px;
+}
+
+.pin-css {
+    margin: 0px 8px 0px 8px;
+    width: 40px;
+}
+.start-css, .pin-css, .reset-css {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+    padding: 5px 10px;
+    background-color: var(--TIME-COLOR);
+    color: var(--FONT-COLOR);
+    cursor: pointer;
+}
+
+.pin-div {
+    margin: 20px 0px 0px 20px ;
+    font-size: 1.3rem;
+}
+
+.add-mark {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    color: var(--ADD-MARK-COLOR);
+    border-bottom: 1px solid black;
+    margin: 4px 20px 10px 0px ;
+}
+
+.msg-index {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 400px) {
+.main-container {
+    width: 350px;
+}
+.start-css, .pin-css, .reset-css {
+    width: 100px;
+}
+.mark-add {
+    margin-top: 20px;
+
+.add-mark {
+    font-size: 1.6rem;
+}
+}
+
+@media screen and (min-width:700px) {
+.main-container {
+    width: 400px;
+}
+.start-css, .pin-css, .reset-css {
+    width: 115px;
+}
+.add-mark {
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+}
+
+}
